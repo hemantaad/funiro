@@ -1,3 +1,15 @@
+:root {
+  --color-gray-1: #3a3a3a;
+  --color-gray-2: #616161;
+  --color-gray-3: #898989;
+  --color-gray-4: #b0b0b0;
+  --color-gray-5: #d8d8d8;
+  --color-light-bg: #f4f5f7;
+  --color-primary: #e89f71;
+  --color-green-accents: #2ec1ac;
+  --color-red-accents: #e97171;
+}
+
 *,
 *::before,
 *::after {
@@ -9,6 +21,7 @@
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  font-family: "Roboto Condensed";
 }
 img,
 picture,
@@ -32,4 +45,99 @@ h4,
 h5,
 h6 {
   overflow-wrap: break-word;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 123.6rem;
+  margin: 0 auto;
+}
+
+.hero {
+  position: relative;
+  height: 77.4rem;
+}
+
+.hero__content {
+  position: absolute;
+  top: 14.1rem;
+  left: 10rem;
+  padding: 6rem;
+  width: 49.4rem;
+  height: 55.3rem;
+  background: #ffffff;
+}
+
+.hc__title {
+  font-weight: 700;
+  font-size: 5.1rem;
+  color: var(--color-gray-1);
+  margin-bottom: 1.6rem;
+  text-transform: uppercase;
+}
+
+.hc__text {
+  font-size: 2rem;
+  color: var(--color-gray-2);
+  margin-bottom: 4.8rem;
+}
+
+.hc__button {
+  width: 100%;
+  padding: 2.4rem 14rem;
+  font-size: 2rem;
+  color: #fff;
+  background: var(--color-primary);
+  border: 0;
+}
+
+.hero__badge {
+  position: absolute;
+  height: 14.8rem;
+  width: 29.4rem;
+  right: 4rem;
+  bottom: 4rem;
+  background: white;
+  padding: 2.4rem;
+}
+
+.hb__title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  color: var(--color-gray-1);
+}
+
+.hb__text {
+  font-size: 1.6rem;
+  color: var(--color-gray-2);
+}
+
+.hb__price {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--color-gray-1);
+}
+
+.hero_img_center {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero_img_right {
+  position: absolute;
+  right: -96.9rem;
+  bottom: 0;
+  z-index: -1;
+}
+
+.hero_img_left {
+  position: absolute;
+  right: 96.3rem;
+  bottom: 0;
+  z-index: -1;
 }
